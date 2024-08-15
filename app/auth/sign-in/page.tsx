@@ -9,7 +9,7 @@ export default function SignIn() {
      
     return (
         <MaxWContainer classes="border rounded shadow-md py-24 mt-8">
-            <h1 className="text-2xl font-bold text-center">Welcome to EZRental</h1>
+            <h1 className="text-2xl font-bold text-center">Welcome to RentEase</h1>
 
             <hr />
 
@@ -26,19 +26,6 @@ export default function SignIn() {
                     src='/google-logo.svg' 
                     alt='google logo' />
                     Sign in with Google
-                </Button>
-
-                <Button 
-                onClick={async () => await signIn('facebook', {
-                    callbackUrl: `${window.location.origin}`
-                })}
-                className="shadow-sm" 
-                variant='outline'>
-                    <Image width={24} height={24} 
-                    className="mr-2"
-                    src='/facebook-logo.svg' 
-                    alt='facebook logo' />
-                    Sign in with Facebook
                 </Button>
             </div>
 
